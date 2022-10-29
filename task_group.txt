@@ -3,6 +3,6 @@ Stardard normal data : maybe Hieu
 Form Web : Su
 Label Encoder : Hung
 LDA : Son
-Naive bayes : Trung
+Logistic Regression : Trung
 😀😄😅😂
 Deadline : 3-4/11/2022
