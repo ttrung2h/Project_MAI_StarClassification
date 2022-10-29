@@ -1,0 +1,99 @@
+/* reset css */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.header {
+  height: 4rem;
+  /* width: 11rem; */
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-logo {
+  height: 5rem;
+  width: 11rem;
+  border-right: 1px solid orange;
+}
+
+.logo-header_container {
+  /* border-right: 1px solid orange; */
+}
+
+.header-dicription {
+  color: blue;
+  flex: 1;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Bebas Neue", "cursive";
+  color: orange;
+}
+
+.main-content {
+  border: 1px solid orange;
+}
+
+.body-area {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* SIDE BAR */
+.sidebar {
+  width: 11rem;
+  border-top: 1px solid orange;
+  /* background-color: rgb(19, 178, 117); */
+}
+
+.sidebar_menu {
+  /* margin-top: 1rem; */
+}
+
+.menu-child {
+  height: 2rem;
+  padding: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  color: #465347;
+  /* color: orange; */
+}
+
+.menu-img {
+  padding: 0.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.child-menu_title {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 0.9rem;
+}
+
+.menu-child:hover {
+  background-color: #f3f1fa;
+  cursor: pointer;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  flex: 1;
+  background: #e2dfdc;
+}
