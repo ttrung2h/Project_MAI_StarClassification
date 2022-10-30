@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project MAI</title>
-    <link rel="stylesheet" href="/css/stylecss.css" />
+    <link rel="stylesheet" href="static/css/stylecss.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/predict.css" />
+    <link rel="stylesheet" href="static/css/predict.css" />
   </head>
   <body>
     <div class="container">
       <!-- TOP BAR -->
       <header class="header">
         <div class="logo-header_container">
-          <img src="img/Logo_Đại_học_FPT.png" alt="logo" class="header-logo" />
+          <img src="static/img/Logo_Đại_học_FPT.png" alt="logo" class="header-logo" />
         </div>
         <div class="header-dicription">
           <h1>COMPUTER PROJECT MAI391</h1>
@@ -32,12 +32,12 @@
         <div class="sidebar">
           <div class="sidebar_menu">
             <div class="project_menu menu-child">
-              <img src="img/neural.png" alt="" class="menu-img" />
+              <img src="static/img/neural.png" alt="" class="menu-img" />
               <a href="predict.html" class="child-menu_title">Predict</a>
             </div>
 
             <div class="document-project_menu menu-child">
-              <img src="img/document.png" alt="" class="menu-img" />
+              <img src="static/img/document.png" alt="" class="menu-img" />
               <a href="document.html" class="child-menu_title">Document</a>
             </div>
           </div>
@@ -47,7 +47,7 @@
         <div class="main-content">
           <h3 class="main-content_h2">Input data to predict:</h3>
           <div class="form-predict_container">
-            <form action="" class="form-predict">
+            <form method = "POST" class="form-predict">
               <div class="input-predict">
                 <label for="Temperature">Temperature:</label>
                 <input
@@ -58,7 +58,7 @@
                 />
                 <div class="decrip_input_1">
                   <img
-                    src="img/info.png"
+                    src="static/img/info.png"
                     alt="info"
                     class="decrip_input_1-logo"
                   />
@@ -66,7 +66,7 @@
                 <br />
               </div>
               <div class="input-predict">
-                <label for="Temperature">L:</label>
+                <label for="L">L:</label>
                 <input
                   type="number"
                   placeholder="L"
@@ -75,7 +75,7 @@
                 />
                 <div class="decrip_input_2">
                   <img
-                    src="img/info.png"
+                    src="static/img/info.png"
                     alt="info"
                     class="decrip_input_2-logo"
                   />
@@ -83,7 +83,7 @@
                 <br />
               </div>
               <div class="input-predict">
-                <label for="Temperature">R:</label>
+                <label for="R">R:</label>
                 <input
                   type="number"
                   placeholder="R"
@@ -92,7 +92,7 @@
                 />
                 <div class="decrip_input_3">
                   <img
-                    src="img/info.png"
+                    src="static/img/info.png"
                     alt="info"
                     class="decrip_input_3-logo"
                   />
@@ -100,7 +100,7 @@
                 <br />
               </div>
               <div class="input-predict">
-                <label for="Temperature">A_M:</label>
+                <label for="A_M">A_M:</label>
                 <input
                   type="type/number"
                   placeholder="A_M"
@@ -109,7 +109,7 @@
                 />
                 <div class="decrip_input_4">
                   <img
-                    src="img/info.png"
+                    src="static/img/info.png"
                     alt="info"
                     class="decrip_input_4-logo"
                   />
@@ -117,16 +117,16 @@
                 <br />
               </div>
               <div class="input-predict">
-                <label for="Temperature">Color:</label>
+                <label for="Color">Color:</label>
                 <input
                   type="text"
                   placeholder="Color"
-                  name="color"
+                  name="Color"
                   class="input-form_predict"
                 />
                 <div class="decrip_input_5">
                   <img
-                    src="img/info.png"
+                    src="static/img/info.png"
                     alt="info"
                     class="decrip_input_5-logo"
                   />
@@ -134,7 +134,7 @@
                 <br />
               </div>
               <div class="input-predict">
-                <label for="Temperature">Spectral_Class:</label>
+                <label for="Spectral_Class">Spectral_Class:</label>
                 <input
                   type="text"
                   placeholder="Spectral_Class"
@@ -143,7 +143,7 @@
                 />
                 <div class="decrip_input_6">
                   <img
-                    src="img/info.png"
+                    src="static/img/info.png"
                     alt="info"
                     class="decrip_input_6-logo"
                   />
@@ -157,6 +157,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div>
+      <h3>Predict is {{prediction}}</h3>
     </div>
   </body>
 </html>
