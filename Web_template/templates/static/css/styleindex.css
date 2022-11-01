@@ -1,0 +1,473 @@
+.main-container {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.body_image {
+  position: relative;
+
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  filter: brightness(65%);
+}
+
+.main-content_header {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 5rem;
+  color: #ffffff;
+  font-size: 4rem;
+  z-index: 10000;
+}
+
+.main-content_telescope {
+  height: 45rem;
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.main-content_telescope {
+  cursor: pointer;
+}
+
+.link_predict {
+}
+
+/* Animation */
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 10rem;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  position: absolute;
+  top: 54%;
+  left: 57%;
+  color: yellow;
+  font-size: 2.2rem;
+  animation: typewriter 4s steps(30) 1s 1 normal both,
+    blinkTextCursor 500ms steps(30) infinite normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* STAR ANIMATION CSS */
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position-x: center;
+  background-size: cover;
+  animation: animateBg 50s linear infinite;
+}
+@keyframes animateBg {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  animation: animate 3s linear infinite;
+}
+span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(315deg) translateX(-1500px);
+    opacity: 0;
+  }
+}
+span:nth-child(1) {
+  top: 0;
+  right: 0;
+  left: initial;
+  animation-delay: 0;
+  animation-duration: 1s;
+}
+
+span:nth-child(2) {
+  top: 0;
+  right: 80px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+
+span:nth-child(3) {
+  top: 80px;
+  right: 0px;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+
+span:nth-child(4) {
+  top: 0;
+  right: 180px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+
+span:nth-child(5) {
+  top: 0;
+  right: 400px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+}
+
+span:nth-child(6) {
+  top: 0;
+  right: 600px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+span:nth-child(7) {
+  top: 300px;
+  right: 0px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 1.75s;
+}
+
+span:nth-child(8) {
+  top: 0px;
+  right: 700px;
+  left: initial;
+  animation-delay: 1.4s;
+  animation-duration: 1.25s;
+}
+
+span:nth-child(9) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 0.75s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(10) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 3s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(10) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 3.55s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(11) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 4s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(12) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 5s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(13) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 2.75s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(14) {
+  top: 0px;
+  right: 1100px;
+  left: initial;
+  animation-delay: 2.75s;
+  animation-duration: 2.25s;
+}
+
+/* FORM PREDICT */
+.main-content {
+  border: 2px solid red;
+  min-width: 100vw;
+  min-height: 100vw;
+}
+
+.main-content_h2 {
+  padding: 0 1rem;
+}
+
+.form-predict_container {
+  margin: auto;
+  max-width: 65%;
+  min-height: 70%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-predict {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-predict {
+  width: 85%;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-form_predict {
+  height: 2rem;
+  width: 16rem;
+  margin-left: auto;
+  border-radius: 6px;
+  border: 1px solid rgb(117, 111, 111);
+}
+
+.submit_button {
+  color: red;
+}
+
+.input_submit {
+  min-height: 2.3rem;
+  width: 5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fa6400;
+  color: white;
+  margin-top: 1rem;
+}
+
+.input_submit:hover {
+  cursor: pointer;
+}
+
+.decrip_input_1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_1-logo {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.decrip_input_1::after {
+  content: "Temperature";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 0.75rem;
+  opacity: 0;
+  min-width: 10rem;
+}
+
+.decrip_input_1:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_2-logo {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.decrip_input_2::after {
+  content: "L/Lo";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 0.75rem;
+  opacity: 0;
+  min-width: 10rem;
+}
+
+.decrip_input_2:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_3-logo {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.decrip_input_3::after {
+  content: "R/Ro";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 0.75rem;
+  opacity: 0;
+  min-width: 10rem;
+}
+
+.decrip_input_3:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.decrip_input_4-logo {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.decrip_input_4::after {
+  content: "Mv";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 0.75rem;
+  opacity: 0;
+  min-width: 10rem;
+}
+
+.decrip_input_4:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_5-logo {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.decrip_input_5::after {
+  content: "General Color of Spectrum";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 0.75rem;
+  opacity: 0;
+  min-width: 10rem;
+}
+
+.decrip_input_5:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_6 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_6-logo {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.decrip_input_6::after {
+  content: "O,B,A,F,G,K,M / SMASS";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 0.75rem;
+  opacity: 0;
+  min-width: 10rem;
+}
+
+.decrip_input_6:hover::after {
+  opacity: 1;
+}

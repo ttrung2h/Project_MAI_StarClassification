@@ -1,0 +1,424 @@
+* {
+  font-family: "Inconsolata", monospace;
+  font-family: "Mulish", sans-serif;
+}
+
+.back-to-home {
+  font-size: 1.4rem;
+}
+
+.body_image {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  filter: brightness(65%);
+  font-family: sans-serif, monospace;
+}
+
+.form-predict_container {
+  z-index: 11;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+
+  margin: auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.form_title {
+  margin: 1rem 0 0 4rem;
+  font-size: 2.6rem;
+}
+
+.form-predict {
+  width: 65vw;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-predict {
+  width: 85%;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-form_predict {
+  height: 2.8rem;
+  width: 18rem;
+  margin-left: auto;
+  border-radius: 6px;
+  border: 1px solid rgb(117, 111, 111);
+}
+
+.submit_button {
+  color: red;
+}
+
+.input_submit:hover {
+  cursor: pointer;
+}
+
+.input_submit {
+  min-height: 5rem;
+  width: 10rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fa6400;
+  color: white;
+}
+
+.decrip_input_1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_1-logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+.decrip_input_1::after {
+  content: "Temperature";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 1.3rem;
+  opacity: 0;
+  min-width: 50rem;
+  margin-left: 1.5rem;
+}
+
+.decrip_input_1:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_2-logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+.decrip_input_2::after {
+  content: "L/Lo";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 1.3rem;
+  opacity: 0;
+  min-width: 50rem;
+  margin-left: 1.5rem;
+}
+
+.decrip_input_2:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_3-logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+.decrip_input_3::after {
+  content: "R/Ro";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 1.3rem;
+  opacity: 0;
+  min-width: 50rem;
+  margin-left: 1.5rem;
+}
+
+.decrip_input_3:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.decrip_input_4-logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+.decrip_input_4::after {
+  content: "Mv";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 1.3rem;
+  opacity: 0;
+  min-width: 50rem;
+  margin-left: 1.5rem;
+}
+
+.decrip_input_4:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_5-logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+.decrip_input_5::after {
+  content: "General Color of Spectrum";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 1.3rem;
+  opacity: 0;
+  min-width: 50rem;
+  margin-left: 1.5rem;
+}
+
+.decrip_input_5:hover::after {
+  opacity: 1;
+}
+
+.decrip_input_6 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.decrip_input_6-logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+.decrip_input_6::after {
+  content: "O,B,A,F,G,K,M / SMASS";
+  position: absolute;
+  color: red;
+  left: 1.2rem;
+  font-size: 1.3rem;
+  opacity: 0;
+  min-width: 50rem;
+  margin-left: 1.5rem;
+}
+
+.decrip_input_6:hover::after {
+  opacity: 1;
+}
+
+/* STAR ANIMATION CSS */
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position-x: center;
+  background-size: cover;
+  animation: animateBg 50s linear infinite;
+}
+@keyframes animateBg {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  animation: animate 3s linear infinite;
+}
+span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(315deg) translateX(-1500px);
+    opacity: 0;
+  }
+}
+span:nth-child(1) {
+  top: 0;
+  right: 0;
+  left: initial;
+  animation-delay: 0;
+  animation-duration: 1s;
+}
+
+span:nth-child(2) {
+  top: 0;
+  right: 80px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+
+span:nth-child(3) {
+  top: 80px;
+  right: 0px;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+
+span:nth-child(4) {
+  top: 0;
+  right: 180px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+
+span:nth-child(5) {
+  top: 0;
+  right: 400px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+}
+
+span:nth-child(6) {
+  top: 0;
+  right: 600px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+span:nth-child(7) {
+  top: 300px;
+  right: 0px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 1.75s;
+}
+
+span:nth-child(8) {
+  top: 0px;
+  right: 700px;
+  left: initial;
+  animation-delay: 1.4s;
+  animation-duration: 1.25s;
+}
+
+span:nth-child(9) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 0.75s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(10) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 3s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(10) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 3.55s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(11) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 4s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(12) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 5s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(13) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 2.75s;
+  animation-duration: 2.25s;
+}
+
+span:nth-child(14) {
+  top: 0px;
+  right: 1100px;
+  left: initial;
+  animation-delay: 2.75s;
+  animation-duration: 2.25s;
+}
+
+.result_predict {
+  position: absolute;
+  left: 3rem;
+  color: red;
+  font-size: 3rem;
+}

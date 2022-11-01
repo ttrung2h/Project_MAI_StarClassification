@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/predict.css" />
+    <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mulish:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="static/img/bg-star.jpg" alt="" class="body_image" />
+
+    <div class="form-predict_container">
+      <a href="index.html" class="back-to-home">Home</a>
+      <h2 class="form_title">Input data to predict</h2>
+      <!-- FORM -->
+      <form method="POST" class="form-predict">
+        <div class="input-predict">
+          <label for="Temperature">Temperature:</label>
+          <input
+            type="text"
+            placeholder="Temperature"
+            name="Temperature"
+            class="input-form_predict"
+          />
+          <div class="decrip_input_1">
+            <img
+              src="static/img/info.png"
+              alt="info"
+              class="decrip_input_1-logo"
+            />
+          </div>
+          <br />
+        </div>
+        <div class="input-predict">
+          <label for="L">L:</label>
+          <input
+            type="text"
+            placeholder="L"
+            name="L"
+            class="input-form_predict"
+          />
+          <div class="decrip_input_2">
+            <img
+              src="static/img/info.png"
+              alt="info"
+              class="decrip_input_2-logo"
+            />
+          </div>
+          <br />
+        </div>
+        <div class="input-predict">
+          <label for="R">R:</label>
+          <input
+            type="text"
+            placeholder="R"
+            name="R"
+            class="input-form_predict"
+          />
+          <div class="decrip_input_3">
+            <img
+              src="static/img/info.png"
+              alt="info"
+              class="decrip_input_3-logo"
+            />
+          </div>
+          <br />
+        </div>
+        <div class="input-predict">
+          <label for="A_M">A_M:</label>
+          <input
+            type="type/number"
+            placeholder="A_M"
+            name="A_M"
+            class="input-form_predict"
+          />
+          <div class="decrip_input_4">
+            <img
+              src="static/img/info.png"
+              alt="info"
+              class="decrip_input_4-logo"
+            />
+          </div>
+          <br />
+        </div>
+        <div class="input-predict">
+          <label for="Color">Color:</label>
+          <input
+            type="text"
+            placeholder="Color"
+            name="Color"
+            class="input-form_predict"
+          />
+          <div class="decrip_input_5">
+            <img
+              src="static/img/info.png"
+              alt="info"
+              class="decrip_input_5-logo"
+            />
+          </div>
+          <br />
+        </div>
+        <div class="input-predict">
+          <label for="Spectral_Class">Spectral_Class:</label>
+          <input
+            type="text"
+            placeholder="Spectral_Class"
+            name="Spectral_Class"
+            class="input-form_predict"
+          />
+          <div class="decrip_input_6">
+            <img
+              src="static/img/info.png"
+              alt="info"
+              class="decrip_input_6-logo"
+            />
+          </div>
+          <br />
+        </div>
+        <div class="submit_button">
+          <input type="submit" value="Find" class="input_submit" />
+        </div>
+        <div>
+          <h3 class="result_predict">Predict is {{prediction}}</h3>
+        </div>
+      </form>
+    </div>
+
+    <!-- STAR ANIMATION -->
+    <section>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </section>
+    <script src="static/main.js"></script>
+  </body>
+</html>
