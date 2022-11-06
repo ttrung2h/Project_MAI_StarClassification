@@ -23,22 +23,22 @@
 * **Target**
 
     * Red Dwarf 
-        ![Red Dwarf](Red_Dwarf.jpg)
+        ![Red Dwarf](img_document/Red_Dwarf.jpg)
     
     * Brown Dwarf 
-        ![Brown Dwarf](Brown_dwarf.jpg)
+        ![Brown Dwarf](img_document/Brown_dwarf.jpg)
     
     * White Dwarf 
-        ![White dwarf](White_dwarf.png)
+        ![White dwarf](img_document/White_dwarf.png)
     
     * Main Sequence 
-        ![Main sequence](main_sequence.jpg)
+        ![Main sequence](img_document/main_sequence.jpg)
     
     * Super Giants 
-        ![Super Giants](super_giant.png)
+        ![Super Giants](img_document/super_giant.png)
     
     * Hyper Giants
-        ![Hyper Giants](hyper_giant.png)
+        ![Hyper Giants](img_document/hyper_giant.png)
 
 ## Processing data
 **Using label encoding for category attribute:**
@@ -60,8 +60,8 @@ Label Encoding refers to converting the labels into a numeric form so as to conv
 Linear Discriminant Analysis or Normal Discriminant Analysis or Discriminant Function Analysis is a dimensionality reduction technique that is commonly used for supervised classification problems. It is used for modelling differences in groups i.e. separating two or more classes. It is used to project the features in higher dimension space into a lower dimension space. 
 For example, we have two classes and we need to separate them efficiently. Classes can have multiple features. Using only a single feature to classify them may result in some overlapping as shown in the below figure. So, we will keep on increasing the number of features for proper classification. 
 
-![LDA](0_aIN2UtyTIxTleQtK.png)
-![LDA](1_P3v__lMxUg_SOI7EbC7YVg.png)
+![LDA](img_document/LDA1.png)
+![LDA](img_document/LDA2.png)
 
 ## Train model
 
@@ -75,11 +75,11 @@ regression that allows for more than two categories of the dependent or outcome 
 binary logistic regression, multinomial logistic regression uses maximum likelihood estimation
 to evaluate the probability of categorical membership
 
-![Logistic Regression](Binary_vs_Multiclass_Classification.png)
+![Logistic Regression](img_document/Binary_vs_Multiclass_Classification.png)
 
 ## Evalute model
 
-![Evaluate model](score.png)
+![Evaluate model](img_document/score.png)
 
 
 
