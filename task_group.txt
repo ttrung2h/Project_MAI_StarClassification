@@ -1,8 +1,0 @@
-Information data : Hieu
-Stardard normal data : maybe Hieu
-Form Web : Su
-Label Encoder : Hung
-LDA : Son
-Logistic Regression : Trung
-😀😄😅😂
-Deadline : 3-4/11/2022

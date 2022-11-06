@@ -1,4 +1,4 @@
-# Start classification
+# Star classification
 * **Introduction project**  : Data about star and we build model to predict type of start
 
 

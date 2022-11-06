@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Predict</title>
     <link rel="stylesheet" href="static/css/predict.css" />
     <link rel="stylesheet" href="static/css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,11 +17,17 @@
   <body>
     <img src="static/img/bg-star.jpg" alt="" class="body_image" />
 
-    <div class="form-predict_container">
+    <div class="form-predict_container" id="form-predict_container">
       <a href="index.html" class="back-to-home">Home</a>
       <h2 class="form_title">Input data to predict</h2>
       <!-- FORM -->
-      <form method="POST" class="form-predict">
+
+      <form
+        method="POST"
+        class="form-predict"
+        id="form-predict"
+        onsubmit="{(e) => handleSubmit(e)}"
+      >
         <div class="input-predict">
           <label for="Temperature">Temperature:</label>
           <input
@@ -125,12 +131,22 @@
           <br />
         </div>
         <div class="submit_button">
-          <input type="submit" value="Find" class="input_submit" />
+          <input type="submit" class="input_submit" value="Submit" />
         </div>
+
         <div>
           <h3 class="result_predict">Predict is {{prediction}}</h3>
         </div>
       </form>
+    </div>
+
+    <div class="image-predict-container" id="image-predict-container">
+      <p class="result_detail" id="result_detail"></p>
+      <img alt="" class="image-predict" id="result_detail-img" />
+      <a class="link-attribute" href="" target="_blank" id="link-attribute"
+        >View detail</a
+      >
+      <div class="btn-close" id="btn-close">Close</div>
     </div>
 
     <!-- STAR ANIMATION -->

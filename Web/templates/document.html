@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project MAI</title>
+    <link rel="stylesheet" href="css/stylecss.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Inconsolata:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="././static/css/document.css" />
+    <link rel="stylesheet" href="././static/css/reset.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- TOP BAR -->
+      <h1 class="title-project">Document Computer Project</h1>
+
+      <div class="back-home">
+        <a href="index.html" class="link-document">
+          <img src="././static/img/626-rocket.svg.png" alt="" />
+          <p>Home</p>
+        </a>
+      </div>
+
+      <h1 class="name-project">Star classification</h1>
+      <div class="project-decription">
+        <span class="intro-project_1">Introduction project</span>
+        <span class="intro-project_2"
+          >: Data about star and we build model to predict type of star
+        </span>
+      </div>
+
+      <div class="data">
+        <h1 class="data-header project-title">Data</h1>
+        <div class="data-intro">
+          <span class="intro-project_1">Link of data: </span>
+          <a
+            class="intro-project_2 data-decription-2"
+            href="https://www.kaggle.com/datasets/brsdincer/star-type-classification"
+            target="_blank"
+          >
+            https://www.kaggle.com/datasets/brsdincer/star-type-classification
+          </a>
+        </div>
+        <div class="data-attribute">
+          <div class="intro-project_1">Attribute</div>
+          <ul class="list-attribute">
+            <li>Temperature (K): Temperature of star</li>
+            <li>L -- L/Lo: Solar luminosity Lo = 3.828 x 10^26 Watts</li>
+            <li>R -- R/Ro: Ro = 6.9551 x 10^8 m</li>
+            <li>AM -- Mv: Absolute magnitude</li>
+            <li>Color -- General Color of Spectrum</li>
+            <li>
+              Spectral_Class -- O,B,A,F,G,K,M / SMASS: An asteroid spectral type
+              is assigned to asteroids based on their emission spectrum, color,
+              and sometimes albedo
+            </li>
+          </ul>
+          <div class="data-table">
+            <img src="././static/img/data-table.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="target">
+        <div class="intro-project_1">Target</div>
+
+        <div class="target-img_container">
+          <div class="target-img_element">
+            <a
+              class="target-img_element_title"
+              href="https://en.wikipedia.org/wiki/Red_dwarf"
+              target="_blank"
+            >
+              Red Dwarf
+            </a>
+            <img
+              src="././static/img/Red_Dwarf.jpg"
+              alt=""
+              class="target-img_element_image"
+            />
+          </div>
+          <div class="target-img_element">
+            <a
+              class="target-img_element_title"
+              href="https://en.wikipedia.org/wiki/Brown_dwarf"
+              target="_blank"
+              >Brown Dwarf</a
+            >
+            <img
+              src="././static/img/Brown_dwarf.jpg"
+              alt=""
+              class="target-img_element_image"
+            />
+          </div>
+          <div class="target-img_element">
+            <a
+              class="target-img_element_title"
+              href="https://en.wikipedia.org/wiki/White_dwarf"
+              target="_blank"
+            >
+              White Dwarf
+            </a>
+            <img
+              src="././static/img/White_dwarf.png"
+              alt=""
+              class="target-img_element_image"
+            />
+          </div>
+          <div class="target-img_element">
+            <a
+              class="target-img_element_title"
+              href="https://en.wikipedia.org/wiki/Main_sequence"
+              target="_blank"
+              >Main Sequence</a
+            >
+            <img
+              src="././static/img/main_sequence.jpg"
+              alt=""
+              class="target-img_element_image"
+            />
+          </div>
+          <div class="target-img_element">
+            <a
+              class="target-img_element_title"
+              href="https://en.wikipedia.org/wiki/Supergiant"
+              target="_blank"
+              >Super Giants</a
+            >
+            <img
+              src="././static/img/super_giant.png"
+              alt=""
+              class="target-img_element_image"
+            />
+          </div>
+          <div class="target-img_element">
+            <a
+              class="target-img_element_title"
+              href="https://en.wikipedia.org/wiki/Hypergiant"
+              target="_blank"
+              >Hyper Giants</a
+            >
+            <img
+              src="././static/img/hyper_giant.png"
+              alt=""
+              class="target-img_element_image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="processing">
+        <h1 class="data-header project-title">Processing data</h1>
+
+        <div class="processing-detail">
+          <span class="intro-project_1"
+            >Using label encoding for category attribute:
+          </span>
+          <p class="processing-detail-decription">
+            In machine learning, we usually deal with datasets that contain
+            multiple labels in one or more than one columns. These labels can be
+            in the form of words or numbers. To make the data understandable or
+            in human-readable form, the training data is often labelled in
+            words. Label Encoding refers to converting the labels into a numeric
+            form so as to convert them into the machine-readable form. Machine
+            learning algorithms can then decide in a better way how those labels
+            must be operated. It is an important pre-processing step for the
+            structured dataset in supervised learning.
+          </p>
+          <div class="example">
+            <p>Example:</p>
+            <img src="././static/img/process-table.png" alt="" />
+          </div>
+
+          <span class="intro-project_1">
+            Using LDA(Linear discriminant analysis) for reducing dimension of
+            data:</span
+          >
+
+          <p class="processing-detail-decription">
+            Linear Discriminant Analysis or Normal Discriminant Analysis or
+            Discriminant Function Analysis is a dimensionality reduction
+            technique that is commonly used for supervised classification
+            problems. It is used for modelling differences in groups i.e.
+            separating two or more classes. It is used to project the features
+            in higher dimension space into a lower dimension space. For example,
+            we have two classes and we need to separate them efficiently.
+            Classes can have multiple features. Using only a single feature to
+            classify them may result in some overlapping as shown in the below
+            figure. So, we will keep on increasing the number of features for
+            proper classification.
+          </p>
+          <img src="./static/img/0_aIN2UtyTIxTleQtK.png" alt="" />
+          <br />
+          <img
+            src="./static/img/1_P3v__lMxUg_SOI7EbC7YVg.png"
+            alt=""
+            class="processing-detail-img2"
+          />
+        </div>
+      </div>
+
+      <div class="train-model">
+        <h1 class="data-header project-title">Train model</h1>
+        <div class="train-model-decription">
+          <span class="intro-project_1">
+            Using Logistic Regression for multiclass classification
+          </span>
+          <p class="processing-detail-decription">
+            Multinomial logistic regression is used to predict categorical
+            placement in or the probability of category membership on a
+            dependent variable based on multiple independent variables. The
+            independent variables can be either dichotomous (i.e., binary) or
+            continuous (i.e., interval or ratio in scale). Multinomial logistic
+            regression is a simple extension of binary logistic regression that
+            allows for more than two categories of the dependent or outcome
+            variable. Like binary logistic regression, multinomial logistic
+            regression uses maximum likelihood estimation to evaluate the
+            probability of categorical membership.
+          </p>
+          <img
+            src="./static/img/Binary_vs_Multiclass_Classification.png"
+            alt=""
+            class="processing-detail-img2"
+          />
+        </div>
+      </div>
+
+      <div class="evalute-model">
+        <h1 class="data-header project-title">Evalute model</h1>
+        <div class="evalute-model-detail">
+          <img
+            src="./static/img/score.png"
+            alt=""
+            class="processing-detail-img2"
+          />
+        </div>
+      </div>
+
+      <div class="project-source">
+        <h1 class="data-header project-title">Reference Project</h1>
+        <div class="project-source-detail">
+          <a
+            href="https://github.com/ttrung2h/Project_MAI_StarClassification"
+            class="github-link"
+          >
+            <span>Github:</span>
+            <a
+              href="https://github.com/ttrung2h/Project_MAI_StarClassification"
+              target="_blank"
+              >https://github.com/ttrung2h/Project_MAI_StarClassification</a
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

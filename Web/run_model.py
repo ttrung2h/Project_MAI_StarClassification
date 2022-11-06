@@ -4,7 +4,6 @@ from flask import Flask, render_template, request
 import pandas as pd
 
 app = Flask(__name__, template_folder="templates", static_folder="templates/static")
-# using 3 file html in templates folder
 @app.route("/", methods=["GET", "POST"])
 @app.route("/index.html")
 def index():

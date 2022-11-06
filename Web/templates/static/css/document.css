@@ -1,0 +1,198 @@
+* {
+  font-family: Barlow, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  padding: 1rem 10rem;
+}
+
+.title-project {
+  font-size: 3.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fd6702;
+}
+
+.link-document {
+  height: 3rem;
+  width: 11rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  text-decoration: none;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 15%;
+  left: 85%;
+  background-color: #cdbdbd;
+  z-index: 200;
+}
+
+.link-document img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.link-document p {
+  color: #444862;
+  font-size: 1.5rem;
+}
+
+.project-decription {
+  padding: 0 3rem;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  color: #3c2167;
+  margin: 1rem 0;
+}
+
+.name-project {
+  font-size: 2.4rem;
+  color: #3c2167;
+  margin: 1rem 0;
+}
+
+.intro-project_1 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+}
+
+.intro-project_2 {
+  font-size: 1.5rem;
+}
+
+.data {
+  margin: 1rem 0;
+}
+
+.data-intro {
+  padding: 0 3rem;
+}
+
+.data-header {
+  font-size: 2.4rem;
+  color: #3c2167;
+  margin: 1rem 0;
+}
+
+.data-decription-2 {
+  font-style: italic;
+  color: blue;
+  text-decoration: underline;
+}
+
+.data-decription-2:hover {
+  cursor: pointer;
+}
+
+.data-attribute {
+  padding: 0 3rem;
+}
+
+.list-attribute {
+  padding: 0 3rem;
+  list-style-type: circle;
+}
+
+.list-attribute li {
+  font-size: 1.5rem;
+}
+
+.data-table {
+  padding: 1.5rem 3rem;
+}
+
+.target {
+  padding: 0 3rem;
+}
+
+.target-img_element {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem;
+}
+
+.target-img_element_title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #6891f2;
+}
+
+.target-img_element_title:hover {
+  color: #3c2167;
+}
+
+.target-img_element_image {
+  height: 40rem;
+  width: 65rem;
+}
+
+.processing-detail {
+  padding: 0 3rem;
+}
+.processing-detail-decription {
+  font-size: 1.5rem;
+  padding: 1.1rem 3rem;
+}
+.example p {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  padding: 0 3rem;
+}
+
+.example img {
+  padding: 1rem 3rem;
+}
+
+.processing-detail-img2 {
+  max-width: 50rem;
+  max-height: 50rem;
+}
+
+.processing-detail {
+  padding: 0 3rem;
+}
+
+.train-model-decription {
+  padding: 0 3rem;
+}
+
+.evalute-model-detail {
+  padding: 0 3rem;
+}
+
+.github-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.github-link span {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.github-link + a {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: blue;
+}
+
+.project-source-detail {
+  padding: 0 3rem;
+}
